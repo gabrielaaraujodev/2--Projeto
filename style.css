@@ -1,0 +1,113 @@
+* {
+  margin: 0;  
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  background-attachment: fixed;
+
+  /* Centralizando a imagem */
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+
+#pageOne, #pageTwo {
+  border: 1px solid red;
+  width: 42rem;
+  padding: 4.8rem 6.4rem;
+  background-color: #fff;
+}
+
+#pageOne,#pageTwo h2 {
+  color: #34355B;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+#pageOne p {
+  color: #34355B;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1.4rem;
+  margin-bottom: 2.6rem;
+  
+}
+
+#biscoit:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+.hide {
+  display: none;
+}
+
+#pageTwo p {
+  color: #000;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+  animation-name: message;  
+  animation-duration: 1.3s;    
+  animation-timing-function: ease-in-out;
+}
+
+#images {
+display: flex;
+margin-top: 1.5rem;
+}
+
+#pageTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pageTwo button {
+  margin-top: 2.6rem;
+  padding: 1.6rem;
+  border-radius: 4px;
+  background: #FF9500;
+  color: #FFF;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  width: auto;
+}
+
+#pageTwo button:hover {
+  background: #fdaf41;
+}
+
+@keyframes message {  
+  0% { 
+    transform:scale(0);
+    opacity: 0.2;
+    transform: translateY(15rem);
+  }
+
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
